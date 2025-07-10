@@ -8,7 +8,8 @@ import lombok.Data;
 @Data
 public class RuleName {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "rule_seq")
+    @SequenceGenerator(name = "rule_seq", sequenceName = "rule_seq", allocationSize = 1)
     @Column(name = "Id")
     private Integer id;
     private String name;
