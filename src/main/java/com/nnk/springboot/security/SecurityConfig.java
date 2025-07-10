@@ -40,7 +40,7 @@ public class SecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/login")
-                .defaultSuccessUrl("/")
+                .defaultSuccessUrl("/bidList/list", true)
                 .failureUrl("/login?error=true")
                 .permitAll()
             )
