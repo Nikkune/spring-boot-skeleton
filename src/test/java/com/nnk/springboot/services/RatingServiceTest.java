@@ -35,7 +35,7 @@ public class RatingServiceTest {
         rating.setMoodysRating("Moody Test");
         rating.setSandPRating("S&P Test");
         rating.setFitchRating("Fitch Test");
-        rating.setOrder(10);
+        rating.setOrderNumber(10);
     }
 
     @Test
@@ -99,7 +99,7 @@ public class RatingServiceTest {
         updatedRating.setMoodysRating("Updated Moody");
         updatedRating.setSandPRating("Updated S&P");
         updatedRating.setFitchRating("Updated Fitch");
-        updatedRating.setOrder(20);
+        updatedRating.setOrderNumber(20);
 
         when(ratingRepository.save(any(Rating.class))).thenReturn(updatedRating);
 
