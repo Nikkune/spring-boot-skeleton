@@ -15,6 +15,5 @@ public class Rating {
     private String moodysRating;
     private String sandPRating;
     private String fitchRating;
-    @Column(name = "orderNumber")
-    private Integer order;
+    private Integer orderNumber;
 }
