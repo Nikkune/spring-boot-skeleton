@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Entity
-@Table(name = "users")
+@Table(name = "Users")
 @Data
 public class User {
     @Id
