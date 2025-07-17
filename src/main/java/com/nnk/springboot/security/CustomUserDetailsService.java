@@ -23,7 +23,7 @@ public class CustomUserDetailsService implements UserDetailsService {
      * CRUD operations and query capabilities.
      *
      * This instance is autowired into the service or controller layer
-     * (e.g., {@link CustomUserDetailsService}, {@link UserController}) to facilitate
+     * (e.g., {@link CustomUserDetailsService}) to facilitate
      * interaction with the user-related database table.
      */
     @Autowired
